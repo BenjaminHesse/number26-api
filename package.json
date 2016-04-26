@@ -1,0 +1,31 @@
+{
+  "author": "Benjamin Hesse",
+  "dependencies": {
+    "request": "^2.69.0"
+  },
+  "description": "Inoffizieller Client für die Number26-API",
+  "devDependencies": {},
+  "keywords": [
+    "number26",
+    "n26",
+    "api",
+    "client",
+    "banking"
+  ],
+  "license": "MIT",
+  "main": "number26-api.js",
+  "name": "number26-api",
+  "optionalDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BenjaminHesse/number26-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BenjaminHesse/number26-api/issues"
+  },
+  "homepage": "https://github.com/BenjaminHesse/number26-api#readme"
+}
