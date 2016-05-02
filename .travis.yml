@@ -5,7 +5,7 @@ node_js:
 - 5.7
 - 5.8
 - 5.9
-- 5.10
+- 5.1
 - 5.11
 - 6.0
 install:
@@ -17,3 +17,11 @@ script:
 env:
   global:
     secure: YNHCWXn5pKenhLHGzPhER+BcWfMWn2xlgV9/PmtLpOcVPiD1K5UNbcwMfSLMNv6eTJJUeSCULTtNGqLCenetv/M68LhTu/3K/yVw2Z6nmtWbxsd/Ty4lLsES11tnczJFKMMCfGLLk8E0LDdeADqyzAJM9p73zbIiUaGZZtf8jjL19ecZzwgaqvwdFLJR69D7w3JLSfYm5dlZO6PN78+Eebv2YtGoXpp4AON4vBllfoXmihCZZlpNiXS/x7I96QpFnv8PtazO6A53BqVQ7e85aIvkjCnS2HLtqQCDwEdJ/PUxTPOMekhfN0hhYcau4CwEp3BAPqnlsZfiV1lIM4wuQze1h+xXceslP/XbbchkIAn6pWEPQLAwa2OL+quc6G++GFHliXTEec2JrtcFql5MLTFcN6MR3CMR3aVxR5Dw8Au52Nnx5TtEuzAGkgZLJMsEz5ZGHDZ0m+5LyqjYQ9HREsQyMv1LTH02F2p5l9Q1uje7fO5qNdQrb8eQQjX32SN0cbXzQISILprDk2uLFWFW2G6d3FcI29ITw4kgA6EAtiAxkTOIPJz3Be4N8W73DaWJsQms2IcUX+IPIqjSdJw2S2bS9YoziKNFMg7XsAaBAE8+DHTOys4c211KyRy2Y9vNVK33bJMoDoytmozR5xb4+FTIwHeHCUP3doRrAkV112w=
+deploy:
+  provider: npm
+  email: b.hesse@realdev.de
+  api_key:
+    secure: pL/RT+27IpZHw32ddphK43H1oDW7Bb1hW4iRx3xRJSf0yCoq6n1BhK6rd/YHDEMWHKaSFzrgtqkkxBkcdM7ot2y1neVPMtiV3WVPtWFnYNB7LDB484c+fSczxwOZK6+EywbAdV0GlPl8f/UPgZHdVXurtpkxQsXJttljpMOL4Xof8b+chg0uMian/K0TBCsB25yc0tZSMjrVukBoHog45bzQ+ayJh0wEbx5whg2AEKMtKTBvyxdbYIzwjzgK8+WhbrnRWrLAtP6zy0FmCOdmKztYvrDz7aTmT9La8c9oyLx/1b7BGFeL7k4zD+wTgYZ4vMLVoMxjcaoilmmub087HwQuP51tV9UTab/SDNlB/I+m34cr5Tw5JK7EawKAhtyJ+XEDBuhMafJAf5eKtAkdpcz5WV4muMT44yU7k2dpAEQrU68PNzMfqmYNPMMHM04JPL9WSuner37xIVzjj5hTEsS+9rkaRh3okoU/m4vSJ2MDRXgqp3qDzrcHu0e295rEiCiQOmkDob1sZ33OlDBoZIyQGweVQvNRZK+26gCnNDjFA/NNikn7kiby4Iwhc6EkQ3zcRHLDgu7fnEk+qvZT1DbNJJKLTFDmoh9CUXwmaWI1dbQeFkORX2GCubV966nE28BxFD2Wz5GKyowRbDAVG73MQD3O12VZojrMbzO0Wio=
+  on:
+    tags: true
+    repo: BenjaminHesse/number26-api
