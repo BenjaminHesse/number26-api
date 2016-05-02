@@ -62,7 +62,7 @@ var User = function(username, password, callback) {
 							}
 						}
 					}, function(err,httpResponse,body) {
-						callback(body);
+						callback(JSON.parse(body));
 					});		
 				};
 				suc = true;

@@ -1,0 +1,78 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/benni/.nvm/versions/node/v5.6.0/bin/node',
+1 verbose cli   '/home/benni/.nvm/versions/node/v5.6.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.6.0
+3 info using node@v5.6.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/benni/node_modules/number26-api',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/benni/.npm/number26-api/1.0.2/package.tgz not in flight; packing
+9 verbose correctMkdir /home/benni/.npm correctMkdir not in flight; initializing
+10 info lifecycle number26-api@1.0.2~prepublish: number26-api@1.0.2
+11 silly lifecycle number26-api@1.0.2~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/benni/.npm/number26-api/1.0.2/package.tgz',
+12 verbose tar pack   '/home/benni/node_modules/number26-api' ]
+13 verbose tarball /home/benni/.npm/number26-api/1.0.2/package.tgz
+14 verbose folder /home/benni/node_modules/number26-api
+15 verbose addLocalTarball adding from inside cache /home/benni/.npm/number26-api/1.0.2/package.tgz
+16 verbose correctMkdir /home/benni/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd number26-api@1.0.2
+18 verbose afterAdd /home/benni/.npm/number26-api/1.0.2/package/package.json not in flight; writing
+19 verbose correctMkdir /home/benni/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/benni/.npm/number26-api/1.0.2/package/package.json written
+21 silly publish { author: { name: 'Benjamin Hesse' },
+21 silly publish   dependencies: { request: '^2.69.0' },
+21 silly publish   description: 'Inoffizieller Client für die Number26-API',
+21 silly publish   keywords: [ 'number26', 'n26', 'api', 'client', 'banking' ],
+21 silly publish   license: 'MIT',
+21 silly publish   main: 'number26-api.js',
+21 silly publish   name: 'number26-api',
+21 silly publish   optionalDependencies: {},
+21 silly publish   version: '1.0.2',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/BenjaminHesse/number26-api.git' },
+21 silly publish   bugs: { url: 'https://github.com/BenjaminHesse/number26-api/issues' },
+21 silly publish   homepage: 'https://github.com/BenjaminHesse/number26-api#readme',
+21 silly publish   readme: '# number26-api\r\n\r\n[![Build Status](https://travis-ci.org/BenjaminHesse/number26-api.svg?branch=master)](https://travis-ci.org/BenjaminHesse/number26-api)\r\n\r\nStill work in progress!\r\n=======================',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'b0a3d11fe47a2aee2604344ee0f860d736273e7d',
+21 silly publish   _id: 'number26-api@1.0.2',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '4c791e849433369380905db6a5a8b1a8630e877f',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name number26-api
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/number26-api
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /home/benni/.npm/number26-api/1.0.2/package.tgz
+29 verbose stack Error: auth required for publishing
+29 verbose stack     at CachingRegistryClient.publish (/home/benni/.nvm/versions/node/v5.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+29 verbose stack     at /home/benni/.nvm/versions/node/v5.6.0/lib/node_modules/npm/lib/publish.js:137:14
+29 verbose stack     at mapToRegistry (/home/benni/.nvm/versions/node/v5.6.0/lib/node_modules/npm/lib/utils/map-to-registry.js:55:3)
+29 verbose stack     at publish_ (/home/benni/.nvm/versions/node/v5.6.0/lib/node_modules/npm/lib/publish.js:106:3)
+29 verbose stack     at Array.<anonymous> (/home/benni/.nvm/versions/node/v5.6.0/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+29 verbose stack     at LOOP (/home/benni/.nvm/versions/node/v5.6.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+29 verbose stack     at LOOP (/home/benni/.nvm/versions/node/v5.6.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+29 verbose stack     at chain (/home/benni/.nvm/versions/node/v5.6.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+29 verbose stack     at /home/benni/.nvm/versions/node/v5.6.0/lib/node_modules/npm/lib/publish.js:72:5
+29 verbose stack     at RES (/home/benni/.nvm/versions/node/v5.6.0/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+30 verbose cwd /home/benni/node_modules/number26-api
+31 error Linux 4.4.0-21-generic
+32 error argv "/home/benni/.nvm/versions/node/v5.6.0/bin/node" "/home/benni/.nvm/versions/node/v5.6.0/bin/npm" "publish"
+33 error node v5.6.0
+34 error npm  v3.6.0
+35 error code ENEEDAUTH
+36 error need auth auth required for publishing
+37 error need auth You need to authorize this machine using `npm adduser`
+38 verbose exit [ 1, true ]
