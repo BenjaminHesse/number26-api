@@ -24,7 +24,7 @@ var User = function(username, password, callback) {
 					'Content-Type': 'application/json',
 					'Accept': 'application/json',
 					'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36'	
-				}
+				};
 
 				u.balance = function(callback) {
 					req.get({
@@ -32,11 +32,11 @@ var User = function(username, password, callback) {
 						headers: headerObj
 					}, function(err,httpResponse,body) {
 						var account = JSON.parse(body);
-						var bal = account.usableBalance
+						var bal = account.usableBalance;
 						if(isNaN(bal)) balance(token, callback);
 						else callback(bal);
 					});
-				}
+				};
 				u.transactions = function(callback) {
 					req.get({
 						url: api + '/api/transactions?sort=visibleTS&dir=DESC&limit=20',
@@ -44,7 +44,7 @@ var User = function(username, password, callback) {
 					}, function(err,httpResponse,body) {
 						callback(JSON.parse(body));
 					});
-				}
+				};
 				u.transfer = function(token, pin, bic, amount, iban, partner, reason, callback) {
 					req.post({
 						url: api + '/api/transactions',
@@ -63,16 +63,15 @@ var User = function(username, password, callback) {
 					}, function(err,httpResponse,body) {
 						callback(body);
 					});		
-				}
+				};
 
-				var token = auth.access_token;
 				callback(u);
 			}
 		}
 		if(!token) {
 			User(username,password,callback);	
 		}
-	})
-}
+	});
+};
 
 exports.User = User;
