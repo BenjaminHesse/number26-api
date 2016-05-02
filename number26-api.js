@@ -15,6 +15,7 @@ var User = function(username, password, callback) {
 			'grant_type': 'password'
 		}
 	}, function(err,httpResponse,body) {
+		var suc = false;
 		if(body) {
 			auth = JSON.parse(body);
 			if(!(auth.title && auth.title == 'Oops!') && auth.access_token) {
@@ -64,11 +65,12 @@ var User = function(username, password, callback) {
 						callback(body);
 					});		
 				};
-
+				suc = true;
+				var token = auth.access_token;
 				callback(u);
 			}
 		}
-		if(!token) {
+		if(!suc) {
 			User(username,password,callback);	
 		}
 	});
