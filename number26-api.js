@@ -73,30 +73,4 @@ exports.User = function(username, password, callback) {
 			User(username,password,callback);	
 		}
 	});
-}/*
-
-
-exports.transfer = function(token, pin, bic, amount, iban, partner, reason, callback) {
-	req.post({
-		url: api + '/api/transactions',
-		headers: {
-			'Authorization': 'bearer ' + token,
-			'Content-Type': 'application/json',
-			'Accept': 'application/json',
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36'	
-		},
-		json: {
-			'pin': pin,
-			'transaction': {
-				'partnerBic': bic,
-				'amount': amount,
-				'type': 'DT',
-				'partnerIban': iban,
-				'partnerName': partner,
-				'referenceText': reason
-			}
-		}
-	}, function(err,httpResponse,body) {
-		callback(body);
-	});		
-}*/
+}
