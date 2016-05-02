@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- 5.6.0
+install:
+- npm install
+- npm install jshint
+script:
+- node ./node_modules/jshint/bin/jshint number26-api.js
+- node test.js
+env:
+  global:
+    secure: YNHCWXn5pKenhLHGzPhER+BcWfMWn2xlgV9/PmtLpOcVPiD1K5UNbcwMfSLMNv6eTJJUeSCULTtNGqLCenetv/M68LhTu/3K/yVw2Z6nmtWbxsd/Ty4lLsES11tnczJFKMMCfGLLk8E0LDdeADqyzAJM9p73zbIiUaGZZtf8jjL19ecZzwgaqvwdFLJR69D7w3JLSfYm5dlZO6PN78+Eebv2YtGoXpp4AON4vBllfoXmihCZZlpNiXS/x7I96QpFnv8PtazO6A53BqVQ7e85aIvkjCnS2HLtqQCDwEdJ/PUxTPOMekhfN0hhYcau4CwEp3BAPqnlsZfiV1lIM4wuQze1h+xXceslP/XbbchkIAn6pWEPQLAwa2OL+quc6G++GFHliXTEec2JrtcFql5MLTFcN6MR3CMR3aVxR5Dw8Au52Nnx5TtEuzAGkgZLJMsEz5ZGHDZ0m+5LyqjYQ9HREsQyMv1LTH02F2p5l9Q1uje7fO5qNdQrb8eQQjX32SN0cbXzQISILprDk2uLFWFW2G6d3FcI29ITw4kgA6EAtiAxkTOIPJz3Be4N8W73DaWJsQms2IcUX+IPIqjSdJw2S2bS9YoziKNFMg7XsAaBAE8+DHTOys4c211KyRy2Y9vNVK33bJMoDoytmozR5xb4+FTIwHeHCUP3doRrAkV112w=

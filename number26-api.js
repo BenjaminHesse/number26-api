@@ -1,7 +1,7 @@
 var req = require('request');
 var api = 'https://api.tech26.de';
 
-exports.User = function(username, password, callback) {
+var User = function(username, password, callback) {
 	req.post({
 		url: api + '/oauth/token',
 		headers: {
@@ -42,7 +42,7 @@ exports.User = function(username, password, callback) {
 						url: api + '/api/transactions?sort=visibleTS&dir=DESC&limit=20',
 						headers: headerObj
 					}, function(err,httpResponse,body) {
-						callback(body);
+						callback(JSON.parse(body));
 					});
 				}
 				u.transfer = function(token, pin, bic, amount, iban, partner, reason, callback) {
@@ -72,5 +72,7 @@ exports.User = function(username, password, callback) {
 		if(!token) {
 			User(username,password,callback);	
 		}
-	});
+	})
 }
+
+exports.User = User;
