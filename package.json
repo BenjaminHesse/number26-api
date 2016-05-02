@@ -4,9 +4,6 @@
     "request": "^2.69.0"
   },
   "description": "Inoffizieller Client für die Number26-API",
-  "devDependencies": {
-    "jshint": "^2.9.2"
-  },
   "keywords": [
     "number26",
     "n26",
